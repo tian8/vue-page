@@ -18,6 +18,7 @@
         </div>
       </div>
     </div>
+    <div class="movie-loading">
     <button
       class="add-more btn"
       @click="goNext()"
@@ -25,6 +26,7 @@
       <i>点击加载更多....</i>
     </button>
     <button class="add-more btn disabled" v-else>加载中<i class="iconfont icon-loading i-loading"></i></button>
+    </div>
 
     <div class="movie-background" v-if="introduce" @click="closeMovie">
       <div class="movie-introduce">
@@ -328,10 +330,13 @@
     }
 
   }
-
+  .movie-loading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+  }
   .add-more {
-    display: block;
-    margin: 10px auto 50px;
     width: 200px;
     cursor: pointer;
   }
