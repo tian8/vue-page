@@ -19,5 +19,4 @@ npm run build --report
 ```
 
 ##introduce
--
 用vue2打包的一个项目
