@@ -1,6 +1,6 @@
 # blog-vue
 
-> blog
+> page
 
 ## Build Setup
 
